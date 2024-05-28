@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: f720f8c031a67784c87049f01eb65b39
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: char_dikidaw (4)_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2335
+        width: 83
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419b336e6fa46ae41b5bec85c11eca05
+      internalID: 1646828579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2014
+        width: 78
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fad0bdb2df2e24a87d957686040406
+      internalID: -300987750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1693
+        width: 78
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e33481ddc8d44db22384d89467b88
+      internalID: -1301329562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1373
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82073c7e3752a54b9429bc19cb093aa
+      internalID: 1596175207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1049
+        width: 72
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43a2d6aad72a084ca2acb4c3edacef2
+      internalID: -1966649350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1049
+        width: 79
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fab4f60a7f1e7347b9de309c4a56561
+      internalID: -709168835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_34
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1049
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a27056013db2564cadb175ceaaf331c
+      internalID: 429541026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_35
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1049
+        width: 78
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c56e7ba614755644a0d64572cfe1238
+      internalID: 170725611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_36
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1049
+        width: 87
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4429f214df2a6674aa5bdfa10551a19e
+      internalID: -1105479549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_37
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1049
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15244e108e143f84db0a597fa5c4ed28
+      internalID: -2045288698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_42
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 734
+        width: 93
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d3aee163bc70f479f37ddc758bc6e9
+      internalID: 674540484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_44
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 734
+        width: 94
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4c444443052dc49b128704ee5085f6
+      internalID: 1691263589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_45
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 734
+        width: 94
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e47a156943130a43a5e87bb98da02b4
+      internalID: -1822965274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_48
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 728
+        width: 78
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7706aa2cda1f2c340b46033fa92014c2
+      internalID: 1018921564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_49
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 734
+        width: 92
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06b910a821dfc74b8ac915358d6b906
+      internalID: 1728689708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_50
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 728
+        width: 77
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6e68f7d4d702d41b09ad400f218595
+      internalID: 178785978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_53
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 413
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5ddea3c5bd62040bf23bccd0434ea5
+      internalID: -1272335328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_54
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 413
+        width: 79
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0982de277ff6d438ea72cc77ab1b4f
+      internalID: 141976970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_55
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 413
+        width: 98
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429808340ca712043a23bf1f677c592d
+      internalID: -624377203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_56
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 413
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a655b3751f80d1d46a1f9d19269ab1fe
+      internalID: 1850691583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_57
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 413
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8b85d7fe6c52449536a99ed81578e
+      internalID: 597585349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_58
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 413
+        width: 97
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62c708de471f664dbb9c2f6146aa348
+      internalID: 1169525905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_63
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 93
+        width: 87
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37eeb05c069f8114bb9ec6cf091f144d
+      internalID: -802520416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_64
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 93
+        width: 78
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e476dbff3060a846ae1a6354ea358c1
+      internalID: 1178033538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_65
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 93
+        width: 99
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78f266a5c3bbbb42b917133544b3fee
+      internalID: -270538749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_66
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 93
+        width: 88
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb052a14673df344b8b2e2f57c16d25
+      internalID: -2024862663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_67
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 93
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dc6d7ffcbf06d48af1206c841c15a4
+      internalID: 987691601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char_dikidaw (4)_68
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 93
+        width: 99
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca3f108ad3a3474c8a57bb3df6c9b7f
+      internalID: 1969499042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      char_dikidaw (4)_0: 1646828579
+      char_dikidaw (4)_1: 1799037744
+      char_dikidaw (4)_10: 366593336
+      char_dikidaw (4)_11: 1322596707
+      char_dikidaw (4)_12: 2007667033
+      char_dikidaw (4)_13: -634610048
+      char_dikidaw (4)_14: 1337133248
+      char_dikidaw (4)_15: 1337852104
+      char_dikidaw (4)_16: -1301329562
+      char_dikidaw (4)_17: -476004889
+      char_dikidaw (4)_18: -1214227709
+      char_dikidaw (4)_19: 1765358696
+      char_dikidaw (4)_2: -2085092161
+      char_dikidaw (4)_20: 1762084671
+      char_dikidaw (4)_21: 1026509692
+      char_dikidaw (4)_22: 1969701314
+      char_dikidaw (4)_23: -1002409835
+      char_dikidaw (4)_24: 1596175207
+      char_dikidaw (4)_25: -167831648
+      char_dikidaw (4)_26: 113571261
+      char_dikidaw (4)_27: 1811785487
+      char_dikidaw (4)_28: 30928300
+      char_dikidaw (4)_29: 1748315213
+      char_dikidaw (4)_3: 1834694190
+      char_dikidaw (4)_30: -147469629
+      char_dikidaw (4)_31: 1149688564
+      char_dikidaw (4)_32: -1966649350
+      char_dikidaw (4)_33: -709168835
+      char_dikidaw (4)_34: 429541026
+      char_dikidaw (4)_35: 170725611
+      char_dikidaw (4)_36: -1105479549
+      char_dikidaw (4)_37: -2045288698
+      char_dikidaw (4)_38: -2080817664
+      char_dikidaw (4)_39: 1871212011
+      char_dikidaw (4)_4: 830039099
+      char_dikidaw (4)_40: -866854605
+      char_dikidaw (4)_41: -1501580958
+      char_dikidaw (4)_42: 674540484
+      char_dikidaw (4)_43: 1282515968
+      char_dikidaw (4)_44: 1691263589
+      char_dikidaw (4)_45: -1822965274
+      char_dikidaw (4)_46: 2049539710
+      char_dikidaw (4)_47: 1859131525
+      char_dikidaw (4)_48: 1018921564
+      char_dikidaw (4)_49: 1728689708
+      char_dikidaw (4)_5: 336576275
+      char_dikidaw (4)_50: 178785978
+      char_dikidaw (4)_51: -1500383448
+      char_dikidaw (4)_52: -302503778
+      char_dikidaw (4)_53: -1272335328
+      char_dikidaw (4)_54: 141976970
+      char_dikidaw (4)_55: -624377203
+      char_dikidaw (4)_56: 1850691583
+      char_dikidaw (4)_57: 597585349
+      char_dikidaw (4)_58: 1169525905
+      char_dikidaw (4)_59: -1349744973
+      char_dikidaw (4)_6: -32796194
+      char_dikidaw (4)_60: -2131941163
+      char_dikidaw (4)_61: -156704800
+      char_dikidaw (4)_62: -96483898
+      char_dikidaw (4)_63: -802520416
+      char_dikidaw (4)_64: 1178033538
+      char_dikidaw (4)_65: -270538749
+      char_dikidaw (4)_66: -2024862663
+      char_dikidaw (4)_67: 987691601
+      char_dikidaw (4)_68: 1969499042
+      char_dikidaw (4)_69: 1653994702
+      char_dikidaw (4)_7: -1512273450
+      char_dikidaw (4)_70: -1921729016
+      char_dikidaw (4)_71: -363958096
+      char_dikidaw (4)_72: -614975211
+      char_dikidaw (4)_8: -300987750
+      char_dikidaw (4)_9: -302514411
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
