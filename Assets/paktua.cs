@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
+using System;
 
 public class paktua : MonoBehaviour
 {
@@ -16,11 +17,17 @@ public class paktua : MonoBehaviour
     public AudioSource audioSource;
     private PlayerMovement playerMovement; 
     public GameObject player; 
+    public Transform playerPosition;
 
 
     // Update is called once per frame
     void Update()
     {
+        if(PancingBatu.pancing){
+            Array.Resize(ref dialogue, 2);
+            dialogue[0] = "Pergilah ke dermaga dan tekan E untuk mulai memancing";
+            dialogue[1] = "Kau harus berhasil menangkap semua monster ikan untuk dapat menemukan lokasi raja ikan iblis";
+        }
         if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && playerIsClose){
             if(dialoguePanel.activeInHierarchy){
                 if(dialogueText.text == dialogue[index]){
@@ -77,6 +84,9 @@ public class paktua : MonoBehaviour
         } else{
             playerMovement.SetMovement(true);
             zeroText();
+            if(!PancingBatu.pancing){
+                playerPosition.position = new Vector3(-1.42f, 22.81f, 0.0f);
+            }
         }
     }
 

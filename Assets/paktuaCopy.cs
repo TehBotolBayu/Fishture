@@ -4,26 +4,42 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
+using System;
 
-public class PancingBatu : MonoBehaviour
+public class paktuaCopy : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
-    public string[] dialogue;
+    public string[] dialogue = new string[2];
     private int index;
     public float wordSpeed;
     public bool playerIsClose;
     public AudioSource audioSource;
     private PlayerMovement playerMovement; 
     public GameObject player; 
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
-    public static bool pancing = false;
+    public Transform playerPosition;
+    public Transform pakTua;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(PancingBatu.pancing){
+            Array.Resize(ref dialogue, 8);
+            dialogue[0] = "Wah ternyata ramalan itu nyata. Seseorang dari dunia lain datang untuk menyelamatkan dunia ikan.!";
+            dialogue[1] = "Dunia ikan telah mengalami kehancuran semenjak raja ikan iblis bangkit.";
+            dialogue[2] = "Raja ikan iblis bersama pasukannya datang. Mereka menenggelamkan kota demi kota";
+            dialogue[3] = "hingga yang tersisa didunia ini hanyalah pulau pulau kecil yang dihuni kaum terakhir dari kami.";
+            dialogue[4] = "Hanya ada satu cara untuk mengalahkan raja ikan iblis, yaitu dengan memancingnya keluar dari lingkungan hidupnya";
+            dialogue[5] = "dengan menggunakan pusaka pancing legendaris";
+            dialogue[6] = "yang konon hanya dapat digunakan oleh manusia terpilih";
+            dialogue[7] = "Kau lah orang itu!";
+
+        } else {
+            Array.Resize(ref dialogue, 2);
+            dialogue[0] = "Masuklah, didalam pusaka suci telah menunggumu";
+            dialogue[1] = "Semoga dewa neptunus memberkatimu";
+        }
         if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && playerIsClose){
             if(dialoguePanel.activeInHierarchy){
                 if(dialogueText.text == dialogue[index]){
@@ -42,7 +58,6 @@ public class PancingBatu : MonoBehaviour
     }
 
     void Start(){
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         dialogueText.text = string.Empty;
         if (audioSource != null)
         {
@@ -81,8 +96,10 @@ public class PancingBatu : MonoBehaviour
         } else{
             playerMovement.SetMovement(true);
             zeroText();
-            pancing = true;
-            spriteRenderer.sprite = newSprite; 
+            if(PancingBatu.pancing){
+                playerPosition.position = new Vector3(15.22f, 7.31f, 0.0f);
+                pakTua.position = new Vector3(15f, 5f, 0.0f);
+            }
         }
     }
 
