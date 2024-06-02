@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ikan
   m_EditorClassIdentifier: 
   nama: Ikan
-  laju: 8
+  laju: 1
   level: 0
   image: {fileID: 21300000, guid: 0cdaf83d075b2e6478220018beac5173, type: 3}

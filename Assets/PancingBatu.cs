@@ -16,8 +16,8 @@ public class PancingBatu : MonoBehaviour
     public AudioSource audioSource;
     private PlayerMovement playerMovement; 
     public GameObject player; 
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
+    public GameObject BatuPancing;
+    public GameObject Batu;
     public static bool pancing = false;
 
     // Update is called once per frame
@@ -42,7 +42,6 @@ public class PancingBatu : MonoBehaviour
     }
 
     void Start(){
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         dialogueText.text = string.Empty;
         if (audioSource != null)
         {
@@ -82,7 +81,8 @@ public class PancingBatu : MonoBehaviour
             playerMovement.SetMovement(true);
             zeroText();
             pancing = true;
-            spriteRenderer.sprite = newSprite; 
+            BatuPancing.SetActive(false);
+            Batu.SetActive(true);
         }
     }
 
