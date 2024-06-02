@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
 using System;
+using UnityEditor;
 
 public class paktua : MonoBehaviour
 {
@@ -18,15 +19,30 @@ public class paktua : MonoBehaviour
     private PlayerMovement playerMovement; 
     public GameObject player; 
     public Transform playerPosition;
+    public GameObject indikator;
+    public Transform PaktuaPosition;
+    private PlayableDirector director;
 
 
     // Update is called once per frame
     void Update()
     {
+           
         if(PancingBatu.pancing){
-            Array.Resize(ref dialogue, 2);
-            dialogue[0] = "Pergilah ke dermaga dan tekan E untuk mulai memancing";
-            dialogue[1] = "Kau harus berhasil menangkap semua monster ikan untuk dapat menemukan lokasi raja ikan iblis";
+            if(FishingSpot.ikan1 && FishingSpot.ikan2 && FishingSpot.ikan3)
+            {
+                Array.Resize(ref dialogue, 3);
+                dialogue[0] = "Wah! Kau berhasil menangkap semua prajurit ikan iblis";
+                dialogue[1] = "Dengan kemampuanmu saat ini aku yakin kau pasti bisa mengalahkan raja ikan iblis";
+                dialogue[2] = "Kau harus ke rumah di timur untuk mengetahui lokasi raja ikan iblis";
+            }
+            else
+            {
+                Array.Resize(ref dialogue, 2);
+                dialogue[0] = "Pergilah ke dermaga dan tekan 'F' untuk mulai memancing";
+                dialogue[1] = "Kau harus berhasil menangkap semua prajurit ikan iblis, setelah itu aku akan memberitahumu lokasi raja ikan iblis";
+            }
+            
         }
         if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && playerIsClose){
             if(dialoguePanel.activeInHierarchy){
@@ -45,7 +61,13 @@ public class paktua : MonoBehaviour
         }
     }
 
+    public void stop(PlayableDirector pd)
+    {
+        director= pd;
+        director.Pause();
+    }
     void Start(){
+        
         dialogueText.text = string.Empty;
         if (audioSource != null)
         {
@@ -53,6 +75,8 @@ public class paktua : MonoBehaviour
         }
         playerMovement = player.GetComponent<PlayerMovement>();
     }
+
+    
 
     public void zeroText(){
         dialogueText.text = "";
@@ -75,6 +99,7 @@ public class paktua : MonoBehaviour
         }
     }
 
+
     public void NextLine(){
         if(index < dialogue.Length - 1)
         {
@@ -87,17 +112,20 @@ public class paktua : MonoBehaviour
             if(!PancingBatu.pancing){
                 playerPosition.position = new Vector3(-1.42f, 22.81f, 0.0f);
             }
+            
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
+            indikator.SetActive(true);
             playerIsClose = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other){
         if(other.CompareTag("Player")){
+            indikator.SetActive(false);
             playerIsClose = false;
             zeroText();
         }

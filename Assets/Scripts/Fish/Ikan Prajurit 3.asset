@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ea627b71202e84881e2c8ff8749cd6, type: 3}
-  m_Name: Ikan Iblis
+  m_Name: Ikan Prajurit 3
   m_EditorClassIdentifier: 
-  nama: Ikan Iblis
-  laju: 1.5
-  level: 4
-  image: {fileID: 21300000, guid: e74f343a118615140ba8f23de084a26a, type: 3}
+  nama: Ikan Prajurit 3
+  laju: 1.2
+  level: 3
+  image: {fileID: 21300000, guid: 6037444ec1664414ba06f1242e54b7cf, type: 3}

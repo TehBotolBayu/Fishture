@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -24,7 +25,9 @@ public class QTE_System : MonoBehaviour
 
     public GameObject qte;
     public PlayerMovement player;
+    public PlayableDirector director;
 
+    public GameObject paktua;
 
     private void Start()
     {
@@ -42,7 +45,30 @@ public class QTE_System : MonoBehaviour
             progress.value -= Time.deltaTime * 0.03f;
         }
         else {
+            switch (FishingSceneData.fish.nama)
+            {
+                case "Ikan Prajurit 1" :
+                    FishingSpot.ikan1 = true;
+                    break;
+                case "Ikan Prajurit 2":
+                    FishingSpot.ikan2 = true;
+                    break;
+                case "Ikan Prajurit 3":
+                    FishingSpot.ikan3 = true;
+                    break;
+                case "Ikan Iblis":
+                    FishingSpot.ikan4 = true;
+                    break;
+            }
+           
             win.SetActive(true);
+        }
+
+        if(progress.value <= 0)
+        {
+            progress.value = 0.5f;
+            qte.SetActive(false);
+            player.SetMovement(true);
         }
         
         
@@ -71,7 +97,11 @@ public class QTE_System : MonoBehaviour
 
         if(win.activeInHierarchy) {
             if (Input.anyKeyDown)
-            { 
+            {
+                if (FishingSpot.ikan4)
+                {
+                    paktua.transform.position = new Vector3(9.12f, -4.83f, -5.08516f);
+                }
                 progress.value = 0.5f;
                 qte.SetActive(false);
                 player.SetMovement(true);

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Pintukeluar2 : MonoBehaviour
 {
@@ -11,15 +12,23 @@ public class Pintukeluar2 : MonoBehaviour
     private bool Spot = false;
     // [SerializeField] List<FishBase> Fish; 
     public Transform player;
+    public GameObject cam;
+    public PlayableDirector director;
+    public static bool lokasi;
     void Update()
     {
         // if (Input.GetKeyDown(KeyCode.E))
         // {
-            if (Spot)
+        if (Spot)
+        {
+            player.position = new Vector3(34.65f, 0.5f, 0.0f);
+            if (PetaPalsu.peta)
             {
-                player.position = new Vector3(34.65f, 0.5f, 0.0f);
-                // SceneManager.LoadScene(4);
+                lokasi = true;
             }
+            // SceneManager.LoadScene(4);
+        }
+        
         // }
     }
     private void OnTriggerEnter2D(Collider2D collision)

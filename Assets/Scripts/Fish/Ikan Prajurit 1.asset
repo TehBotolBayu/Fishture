@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ea627b71202e84881e2c8ff8749cd6, type: 3}
-  m_Name: Fish
+  m_Name: Ikan Prajurit 1
   m_EditorClassIdentifier: 
-  nama: Ikan 2
-  laju: 1.3
-  level: 2
-  image: {fileID: 21300000, guid: 9e282686e53776349af5abde0fb73f22, type: 3}
+  nama: Ikan Prajurit 1
+  laju: 1
+  level: 1
+  image: {fileID: 21300000, guid: ad9ed2e5161020c4aa7db4c7e1f92ea3, type: 3}

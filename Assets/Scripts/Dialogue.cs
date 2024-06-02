@@ -14,8 +14,9 @@ public class Dialogue : MonoBehaviour
     public bool akhir;
     public AudioSource audioSource;
     public GameObject player; // Reference to the player GameObject
-    private PlayerMovement playerMovement; // Reference to the PlayerMovement script
-
+    private PlayerMovement playerMovement;
+    // Reference to the PlayerMovement script
+    public PlayableDirector PaktuaDirector;
     private int index;
 
     // Start is called before the first frame update
@@ -55,7 +56,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine());
         director = pd;
         director.Pause();
-
+        
         // Disable player movement at the start of dialogue
         playerMovement.SetMovement(false);
     }
@@ -95,12 +96,13 @@ public class Dialogue : MonoBehaviour
     {
         if (akhir)
         {
+            PaktuaDirector.Resume();
             canvas.SetActive(false);
             director.Stop();
         }
         director.Resume();
 
         // Enable player movement at the end of dialogue
-        playerMovement.SetMovement(true);
+        playerMovement.SetMovement(true);   
     }
 }

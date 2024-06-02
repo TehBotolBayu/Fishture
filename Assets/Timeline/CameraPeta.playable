@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93ea627b71202e84881e2c8ff8749cd6, type: 3}
-  m_Name: Ikan Iblis
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: CameraPeta
   m_EditorClassIdentifier: 
-  nama: Ikan Iblis
-  laju: 1.5
-  level: 4
-  image: {fileID: 21300000, guid: e74f343a118615140ba8f23de084a26a, type: 3}
+  m_Version: 0
+  m_Tracks: []
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+    m_ScenePreview: 1
+  m_DurationMode: 0
+  m_MarkerTrack: {fileID: 0}

@@ -22,13 +22,16 @@ public static class FishingSceneData
         fish = possibleFish[Random.Range(0, possibleFish.Length)];
         switch (fish.level)
         {
-            case 0:
+            case 1:
+                target = new Vector3(75, 25, 1);
+                break;
+            case 2:
                 target = new Vector3(100, 25, 1);
                 break;
-            case 1:
-                target = new Vector3(150, 25, 1);
+            case 3:
+                target = new Vector3(125, 25, 1);
                 break;
-            default:
+            case 4:
                 target = new Vector3(50, 25, 1);
                 break;
         }

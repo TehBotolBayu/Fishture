@@ -19,6 +19,9 @@ public class paktuaCopy : MonoBehaviour
     public GameObject player; 
     public Transform playerPosition;
     public Transform pakTua;
+    public GameObject indikator;
+    public GameObject ending;
+    public AudioSource musicsource;
 
 
     // Update is called once per frame
@@ -34,6 +37,13 @@ public class paktuaCopy : MonoBehaviour
             dialogue[5] = "dengan menggunakan pusaka pancing legendaris";
             dialogue[6] = "yang konon hanya dapat digunakan oleh manusia terpilih";
             dialogue[7] = "Kau lah orang itu!";
+            if (FishingSpot.ikan4)
+            {
+                Array.Resize(ref dialogue, 3);
+                dialogue[0] = "Terima Kasih! kau telah menyelamatkan dunia ini dari invasi Raja Ikan Iblis";
+                dialogue[1] = "Dunia ikan akan kembali dalam kedamai...";
+                dialogue[2] = "!?!?";
+            }
 
         } else {
             Array.Resize(ref dialogue, 2);
@@ -97,14 +107,25 @@ public class paktuaCopy : MonoBehaviour
             playerMovement.SetMovement(true);
             zeroText();
             if(PancingBatu.pancing){
-                playerPosition.position = new Vector3(15.22f, 7.31f, 0.0f);
-                pakTua.position = new Vector3(15f, 5f, 0.0f);
+                if (FishingSpot.ikan4)
+                {
+                    ending.SetActive(true);
+                    musicsource.Play();
+                    
+                }
+                else
+                {
+                    playerPosition.position = new Vector3(15.22f, 7.31f, 0.0f);
+                    pakTua.position = new Vector3(15f, 5f, 0.0f);
+                }
             }
+            
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
+            indikator.SetActive(true);
             playerIsClose = true;
         }
     }
@@ -112,6 +133,7 @@ public class paktuaCopy : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other){
         if(other.CompareTag("Player")){
             playerIsClose = false;
+            indikator.SetActive(false);
             zeroText();
         }
     }
