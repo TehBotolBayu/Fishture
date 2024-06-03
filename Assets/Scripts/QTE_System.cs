@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -26,7 +27,7 @@ public class QTE_System : MonoBehaviour
     public GameObject qte;
     public PlayerMovement player;
     public PlayableDirector director;
-
+    public TextMeshProUGUI teksikan;
     public GameObject paktua;
 
     private void Start()
@@ -36,6 +37,7 @@ public class QTE_System : MonoBehaviour
 
     void Update()
     {
+        teksikan.text = FishingSceneData.fish.nama;
         WinImage.sprite = FishingSceneData.fish.image;
         pointerMove = FindObjectOfType<PointerMove>();
         target.localScale = FishingSceneData.target;

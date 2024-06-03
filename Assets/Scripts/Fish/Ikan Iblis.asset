@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ikan Iblis
   m_EditorClassIdentifier: 
   nama: Ikan Iblis
-  laju: 1.5
+  laju: 12
   level: 4
   image: {fileID: 21300000, guid: e74f343a118615140ba8f23de084a26a, type: 3}

@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 0904184475b80964483bbaa8ae96f651
   - enabled: 1
-    path: Assets/Scenes/Fishing.unity
-    guid: 6b343e9288cb8374ab370eaa32b044c2
-  - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 38ed5cdc550b52c47b63c2336b4b291b
-  - enabled: 0
-    path: Assets/Scenes/Shop.unity
-    guid: c0e3e89da5031ca48b279fc1ad6bd207
   m_configObjects: {}

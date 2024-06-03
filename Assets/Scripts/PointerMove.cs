@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.Build.Content;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class PointerMove : MonoBehaviour
 {
@@ -21,6 +18,7 @@ public class PointerMove : MonoBehaviour
     private void Update()
     {
         Debug.Log("Ikan Apa Nih = " + FishingSceneData.fish.nama);
+        Debug.Log("Laju= " + FishingSceneData.fish.laju);
         Vector2 target = currentMovementTarget();
         
         pointer.position = Vector2.MoveTowards(pointer.position, target, FishingSceneData.fish.laju);

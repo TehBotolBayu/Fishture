@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ikan Prajurit 2
   m_EditorClassIdentifier: 
   nama: Ikan Prajurit 2
-  laju: 1.1
+  laju: 8
   level: 2
   image: {fileID: 21300000, guid: 9e282686e53776349af5abde0fb73f22, type: 3}
